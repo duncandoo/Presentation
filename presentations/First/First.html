@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+        <meta name="generator" content="pandoc">
+
+		<title>Presentation Title</title>
+
+		<meta name="author" content="my name" />
+        <meta name="dcterms.date" content="2015-02-08" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="../../reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="../../reveal.js/css/theme/beige.css" id="theme">
+        <link rel="stylesheet" type="text/css" href="revealjs_template.css">
+        
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="../../reveal.js/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../../reveal.js/css/print/pdf.css' : '../../reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="../../reveal.js/lib/js/html5shiv.js"></script>
+		<![endif]-->
+        
+        
+	</head>
+
+	<body>
+        
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+            
+                                <section>
+                    <h1 class="title">Presentation Title</h1>
+                                        <h2 class="author">my name</h2>
+                    <h3 class="date">2015-02-08</h3>
+                </section>
+                                
+                <section><section id="r-markdown-pandoc-reveal.js" class="titleslide slide level1"><h1>R Markdown / pandoc / reveal.js</h1></section><section id="r-markdown" class="slide level2">
+                <h1>R Markdown</h1>
+                <p>This is an R Markdown presentation adapted to use the reveal.js framework for displaying the slides. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+                <h3 id="using-knit">Using <strong>knit</strong></h3>
+                <p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.</p>
+                </section></section>
+                <section><section id="section" class="titleslide slide level1"><h1></h1></section><section id="sub-slide-header" class="slide level2">
+                <h1>Sub slide header</h1>
+                <p>One of the great things about reveal.js is its use of two dimensional slides. Level 1 headings create sections, level 2 headings slides within sections, and level three and below the slide content.</p>
+                </section><section id="slide-with-bullets" class="slide level2">
+                <h1>Slide with Bullets</h1>
+                <ul>
+                <li>Bullet 1</li>
+                <li>Bullet 2</li>
+                <li>Bullet 3</li>
+                </ul>
+                </section><section id="slide-with-r-code-and-output" class="slide level2">
+                <h1>Slide with R Code and Output</h1>
+                <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(cars)</code></pre>
+                <pre><code>##      speed           dist    
+                ##  Min.   : 4.0   Min.   :  2  
+                ##  1st Qu.:12.0   1st Qu.: 26  
+                ##  Median :15.0   Median : 36  
+                ##  Mean   :15.4   Mean   : 43  
+                ##  3rd Qu.:19.0   3rd Qu.: 56  
+                ##  Max.   :25.0   Max.   :120</code></pre>
+                </section><section id="slide-with-plot" class="slide level2">
+                <h1>Slide with Plot</h1>
+                <p><img src="figure/unnamed-chunk-2-1.png" title="" alt="" width="805" /></p>
+                </section><section id="slide-with-background-image" class="slide level2" data-background="figure/unnamed-chunk-2-1.png">
+                <h1>Slide with background image</h1>
+                </section><section id="slide-with-maths" class="slide level2">
+                <h1>Slide with maths</h1>
+                <p><br /><span class="math"><em>x</em><sup>2</sup> = <em>y</em><sub>2</sub></span><br /></p>
+                <p>This should be converted to lovely MathJax.</p>
+                </section><section id="slide-with-non-r-code" class="slide level2">
+                <h1>Slide with non-R code</h1>
+                <pre class="js"><code>document.getElementById(&#39;demo&#39;).innerHTML = &#39;Hello Javascript!&#39;</code></pre>
+                <p>Should be syntax highlighted nicely</p>
+                Note: this should work as speaker notes, but may need some work
+                <aside class="notes">
+                <p>These notes should work however, by pressing <code>s</code> while on the slides</p>
+                <ul>
+                <li>It can contain markdown</li>
+                <li>like this list</li>
+                </ul>
+                </aside>
+                </section><section id="a-table-made-from-r-code" class="slide level2">
+                <h1>A table made from R code</h1>
+                <table>
+                <caption>The caption for this table</caption>
+                <thead>
+                <tr class="header">
+                <th style="text-align: left;"></th>
+                <th style="text-align: right;">speed</th>
+                <th style="text-align: center;">dist</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="odd">
+                <td style="text-align: left;"></td>
+                <td style="text-align: right;">Min. : 4.0</td>
+                <td style="text-align: center;">Min. : 2</td>
+                </tr>
+                <tr class="even">
+                <td style="text-align: left;"></td>
+                <td style="text-align: right;">1st Qu.:12.0</td>
+                <td style="text-align: center;">1st Qu.: 26</td>
+                </tr>
+                <tr class="odd">
+                <td style="text-align: left;"></td>
+                <td style="text-align: right;">Median :15.0</td>
+                <td style="text-align: center;">Median : 36</td>
+                </tr>
+                <tr class="even">
+                <td style="text-align: left;"></td>
+                <td style="text-align: right;">Mean :15.4</td>
+                <td style="text-align: center;">Mean : 43</td>
+                </tr>
+                <tr class="odd">
+                <td style="text-align: left;"></td>
+                <td style="text-align: right;">3rd Qu.:19.0</td>
+                <td style="text-align: center;">3rd Qu.: 56</td>
+                </tr>
+                <tr class="even">
+                <td style="text-align: left;"></td>
+                <td style="text-align: right;">Max. :25.0</td>
+                <td style="text-align: center;">Max. :120</td>
+                </tr>
+                </tbody>
+                </table>
+                </section><section id="and-a-table-hand-written" class="slide level2">
+                <h1>And a table hand written</h1>
+                <table>
+                <caption>Demonstration of simple table syntax.</caption>
+                <thead>
+                <tr class="header">
+                <th style="text-align: right;">Right</th>
+                <th style="text-align: left;">Left</th>
+                <th style="text-align: left;">Default</th>
+                <th style="text-align: center;">Center</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="odd">
+                <td style="text-align: right;">12</td>
+                <td style="text-align: left;">12</td>
+                <td style="text-align: left;">12</td>
+                <td style="text-align: center;">12</td>
+                </tr>
+                <tr class="even">
+                <td style="text-align: right;">123</td>
+                <td style="text-align: left;">123</td>
+                <td style="text-align: left;">123</td>
+                <td style="text-align: center;">123</td>
+                </tr>
+                <tr class="odd">
+                <td style="text-align: right;">1</td>
+                <td style="text-align: left;">1</td>
+                <td style="text-align: left;">1</td>
+                <td style="text-align: center;">1</td>
+                </tr>
+                </tbody>
+                </table>
+                </section></section>
+
+			</div>
+
+		</div>
+
+		<script src="../../reveal.js/lib/js/head.min.js"></script>
+		<script src="../../reveal.js/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'default', // none/fade/slide/convex/concave/zoom
+                width: 1620,
+                height: 1080,
+                // Factor of the display size that should remain empty around the content
+                margin: 0.1,
+                // Bounds for smallest/largest possible scale to apply to content
+                minScale: 0.2,
+                maxScale: 1.5, 
+                math: {
+                    mathjax: '../../reveal.js/../mathjax/MathJax.js',
+                    config: 'TeX-AMS_HTML-full' // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '../../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../../reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../../reveal.js/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../../reveal.js/plugin/notes/notes.js', async: true },
+                    { src: '../../reveal.js/plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

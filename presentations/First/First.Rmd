@@ -1,0 +1,85 @@
+---
+title: "Presentation Title"
+author: "my name"
+date: "`r Sys.Date()`"
+revealjs-url: "../../reveal.js/"
+output: 
+  Rcandoo::revealjs_format:
+    theme: beige
+    transition: default
+---
+```{r mainSettings, echo=FALSE}
+library(knitr)
+# knitr options
+opts_chunk$set(cache = TRUE, echo = FALSE, fig.retina = 2, dpi = 115, fig.path = 'figure/')
+options(scipen=2, digits=2)
+```
+# R Markdown / pandoc / reveal.js
+
+## R Markdown
+
+This is an R Markdown presentation adapted to use the reveal.js framework for displaying the slides. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+### Using **knit**
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+#
+## Sub slide header
+
+One of the great things about reveal.js is its use of two dimensional slides. Level 1 headings create sections, level 2 headings slides within sections, and level three and below the slide content.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Code and Output
+
+```{r, echo=TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r}
+plot(cars)
+```
+
+## Slide with background image {data-background=figure/unnamed-chunk-2-1.png}
+
+## Slide with maths
+
+$$ x^2 = y_2 $$
+
+This should be converted to lovely MathJax.
+
+## Slide with non-R code
+```js
+document.getElementById('demo').innerHTML = 'Hello Javascript!'
+```
+Should be syntax highlighted nicely
+
+Note: this should work as speaker notes, but may need some work
+<div class="notes">
+These notes should work however, by pressing `s` while on the slides
+
+- It can contain markdown
+- like this list
+</div>
+
+## A table made from R code
+```{r kableTable, results='asis'}
+kable(summary(cars), align = c('r', 'l'), caption = "The caption for this table")
+```
+
+## And a table hand written
+
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|   12  |  12  |    12   |    12  |
+|  123  |  123 |   123   |   123  |
+|    1  |    1 |     1   |     1  |
+
+  : Demonstration of simple table syntax.
