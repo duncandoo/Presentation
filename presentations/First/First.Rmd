@@ -14,6 +14,14 @@ library(knitr)
 opts_chunk$set(cache = TRUE, echo = FALSE, fig.retina = 2, dpi = 115, fig.path = 'figure/')
 options(scipen=2, digits=2)
 ```
+# The First Presentation -- press the down arrow
+
+## Use the template
+* Edit first.rmd
+* knit
+* look at the results
+* start your own presentation using the template
+
 # R Markdown / pandoc / reveal.js
 
 ## R Markdown
